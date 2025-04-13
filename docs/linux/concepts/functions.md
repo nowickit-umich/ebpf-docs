@@ -16,7 +16,7 @@ In [:octicons-tag-24: v4.16](https://github.com/torvalds/linux/commit/cc8b0b92a1
 
 ### Function inlining
 
-By default, the compiler will chose inline a function or to keep it a separate function. Compilers can be encouraged to inline or not inline a function with arguments like `__attribute__((always_inline))`/[`__always_inline`](../../ebpf-library/libbpf/ebpf/__always_inline.md) or `__attribute__((noinline))`/[`__noinline`](../../ebpf-library/libbpf/ebpf/__noinline.md). Inlined functions do not incur the overhead of a function call as they will become part of the calling function. Inlined functions can also be optimized per call site since arguments are known.
+By default, the compiler will choose to inline a function or to keep it a separate function. Compilers can be encouraged to inline or not inline a function with arguments like `__attribute__((always_inline))`/[`__always_inline`](../../ebpf-library/libbpf/ebpf/__always_inline.md) or `__attribute__((noinline))`/[`__noinline`](../../ebpf-library/libbpf/ebpf/__noinline.md). Inlined functions do not incur the overhead of a function call as they will become part of the calling function. Inlined functions can also be optimized per call site since arguments are known.
 
 ### Function by function verification
 
