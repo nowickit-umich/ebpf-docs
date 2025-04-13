@@ -22,7 +22,7 @@ The `BPF_PROBE_READ_USER` macro is the userspace variant of the [`BPF_PROBE_READ
 
 The `BPF_PROBE_READ_USER` macro is the userspace variant of the [`BPF_PROBE_READ`](BPF_PROBE_READ.md) macro. The difference being that the [`bpf_probe_read_user`](../../../linux/helper-function/bpf_probe_read_user.md) helper function is used instead of the [`bpf_probe_read_kernel`](../../../linux/helper-function/bpf_probe_read_kernel.md) helper function. This makes it able to read from userspace memory.
 
-This macro does not emit CO-RE relocations. Its value is mostly in the pointer chasing use cases where this macro can convert one accessor into multiple [`bpf_probe_read_user`](../../../linux/helper-function/bpf_probe_read_kernel.md) calls. As no CO-RE relocations are emitted, source types can be arbitrary and are not restricted to kernel types only.
+This macro does not emit CO-RE relocations. Its value is mostly in the pointer chasing use cases where this macro can convert one accessor into multiple [`bpf_probe_read_user`](../../../linux/helper-function/bpf_probe_read_user.md) calls. As no CO-RE relocations are emitted, source types can be arbitrary and are not restricted to kernel types only.
 
 Please refer to the [`BPF_PROBE_READ`](BPF_PROBE_READ.md) documentation for more details on usage of it and its variants like this macros.
 
