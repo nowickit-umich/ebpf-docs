@@ -56,7 +56,7 @@ struct xdp_exception_ctx {
 
 ## Attachment
 
-There are three methods of attaching tracepoint programs, from oldest and least recommended to newest and most recommended, however, all methods have this first part in common. 
+There are three methods of attaching tracepoint programs, from oldest and least recommended to newest and most recommended. However, all methods have this first part in common. 
 
 We start by looking up the event ID in the `tracefs`. Inside the event directory is located a pseudo-file called `id`, so for `xdp_exception` that would be `/sys/kernel/tracing/events/xdp/xdp_exception/id`. When reading the file a decimal number is returned.
 
