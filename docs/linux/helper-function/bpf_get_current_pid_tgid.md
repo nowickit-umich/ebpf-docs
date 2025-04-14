@@ -28,6 +28,13 @@ A 64-bit integer containing the current tgid and pid, and created as such: _curr
 !!! example "Docs could be improved"
     This part of the docs is incomplete, contributions are very welcome
 
+Extract pid:
+__u32 pid = (__u32) bpf_get_current_pid_tgid();
+
+Extract tgid:
+__u32 tgid = (__u32) bpf_get_current_pid_tgid() >> 32;
+
+
 ### Program types
 
 This helper call can be used in the following program types:
